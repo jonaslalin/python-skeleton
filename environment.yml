@@ -1,0 +1,11 @@
+name: my-package
+channels:
+  - conda-forge
+dependencies:
+  - black
+  - build
+  - flake8
+  - flake8-bugbear
+  - isort
+  - pep8-naming
+  - python
