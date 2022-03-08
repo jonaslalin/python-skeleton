@@ -2,10 +2,10 @@ name: my-package
 channels:
   - conda-forge
 dependencies:
-  - black
+  - python
   - build
+  - black
+  - isort
   - flake8
   - flake8-bugbear
-  - isort
   - pep8-naming
-  - python
