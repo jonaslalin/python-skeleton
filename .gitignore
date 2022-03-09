@@ -1,6 +1,6 @@
 dist/
+.pytest_cache/
 *.egg-info/
-.tox/
 *.pyc
 .coverage
 .DS_Store

@@ -1,13 +1,20 @@
-name: my-package
+name: tensorflow-skeleton
 channels:
   - conda-forge
+  - apple
+  - nodefaults
 dependencies:
   - python=3.9
+  - pip
   - build
   - black
   - isort
   - flake8
   - flake8-bugbear
   - pep8-naming
-  - tox
-  - tox-conda
+  - pytest
+  - pytest-cov
+  - tensorflow-deps==2.8.0
+  - pip:
+    - tensorflow-macos==2.8.0
+    - tensorflow-metal
