@@ -4,14 +4,16 @@ from mypkg.data import load_data
 from mypkg.model import create_model
 
 
-def train_model(epochs=5):
+def train_model(batch_size=32, epochs=5):
     model = create_model()
     loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
     model.compile(optimizer="adam", loss=loss_fn, metrics=["accuracy"])
     (x_train, y_train), (x_test, y_test) = load_data()
-    model.fit(x_train, y_train, epochs=epochs)
-    model.evaluate(x_test, y_test)
+    model.fit(x_train, y_train, batch_size, epochs)
+    model.evaluate(x_test, y_test, batch_size)
 
 
 if __name__ == "__main__":
-    train_model()
+    for batch_size in [2**exponent for exponent in range(5, 15)]:
+        print(f"Training with batch size {batch_size}")
+        train_model(batch_size)
