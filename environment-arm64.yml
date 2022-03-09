@@ -1,6 +1,7 @@
 name: tensorflow-skeleton
 channels:
   - conda-forge
+  - apple
   - nodefaults
 dependencies:
   - python=3.9
@@ -13,5 +14,7 @@ dependencies:
   - pep8-naming
   - pytest
   - pytest-cov
+  - tensorflow-deps==2.8.0
   - pip:
-    - tensorflow==2.8.0
+    - tensorflow-macos==2.8.0
+    - tensorflow-metal
