@@ -1,0 +1,13 @@
+[run]
+source =
+    my_package
+branch = true
+
+[paths]
+source =
+    src/my_package/
+    */site-packages/my_package/
+
+[report]
+show_missing = true
+skip_covered = true

@@ -2,10 +2,12 @@ name: my-package
 channels:
   - conda-forge
 dependencies:
-  - python
+  - python=3.9
   - build
   - black
   - isort
   - flake8
   - flake8-bugbear
   - pep8-naming
+  - tox
+  - tox-conda
