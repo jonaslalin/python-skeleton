@@ -14,4 +14,4 @@ dependencies:
   - pytest
   - pytest-cov
   - pip:
-    - tensorflow==2.8.0
+    - tensorflow>=2.8,<3
