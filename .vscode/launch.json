@@ -6,11 +6,10 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true,
             "env": {
                 "PYTHONPATH": "src"
-            }
+            },
+            "purpose": ["debug-in-terminal"]
         }
     ]
 }

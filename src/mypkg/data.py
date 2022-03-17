@@ -1,8 +1,8 @@
 import tensorflow as tf
 
 
-def normalize(images):
-    return images / 255
+def normalize(image):
+    return image / 255
 
 
 def load_data():
