@@ -3,11 +3,11 @@
 If you are using Apple Silicon, run
 
 ```
-conda env create -f environment-arm64.yml --force
+conda env create -f environment-arm64.yml
 ```
 
-Otherwise, you should run
+otherwise, you should run
 
 ```
-conda env create --force
+conda env create
 ```
