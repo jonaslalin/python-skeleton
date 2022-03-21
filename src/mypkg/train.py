@@ -5,10 +5,10 @@ from mypkg.model import create_model
 
 
 def train_model(batch_size=32, epochs=5):
+    (x_train, y_train), (x_test, y_test) = load_data()
     model = create_model()
     loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
     model.compile(optimizer="adam", loss=loss_fn, metrics=["accuracy"])
-    (x_train, y_train), (x_test, y_test) = load_data()
     model.fit(x_train, y_train, batch_size, epochs)
     model.evaluate(x_test, y_test, batch_size)
 
