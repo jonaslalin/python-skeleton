@@ -1,7 +1,6 @@
 [run]
 branch = true
-source =
-    mypkg
+source = src
 
 [report]
 show_missing = true
