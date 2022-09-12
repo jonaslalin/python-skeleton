@@ -2,15 +2,16 @@ name: my-package
 channels:
   - conda-forge
 dependencies:
-  - python=3.9
+  - python=3.10
   - pip
   - build
   - black
   - isort
   - flake8
   - flake8-bugbear
+  - flake8-comprehensions
   - pep8-naming
   - pytest
-  - pytest-cov
+  - coverage
   - pip:
-    - tensorflow>=2.8,<3
+    - tensorflow>=2.10,<3

@@ -1,7 +1,8 @@
 build/
 dist/
-.pytest_cache/
+__pycache__/
 *.egg-info/
+.pytest_cache/
 *.pyc
 .coverage
 .DS_Store

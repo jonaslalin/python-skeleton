@@ -1,6 +1,7 @@
 [run]
 branch = true
-source = src
+source =
+    src
 
 [report]
 show_missing = true
